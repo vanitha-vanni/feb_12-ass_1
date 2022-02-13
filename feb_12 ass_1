@@ -1,0 +1,38 @@
+cond=180
+oil=200
+dal=130
+choc=250
+pasta=120
+cname=input('enter customer name:')
+cnum=int(input('enter customer phone number:'))
+condq=int(input('enter no of conditioner bottles:'))
+oilq=int(input('enter no of oil packets:'))
+dalq=int(input('enter no of dal packets:'))
+chocq=int(input('enter no of choclate packets:'))
+pastaq=int(input('enter no of pasta packets:'))
+bill=(cond*condq)+(oil*oilq)+(dal*dalq)+(choc*chocq)+(pasta*pastaq)
+print('bill:',bill)
+if bill>=5000:
+     dis=bill*10/100
+elif bill>=3000:
+     dis=bill*8/100
+elif bill>=2000:
+     dis=bill*5/100
+elif bill>=1000:
+     dis=bill*3/100
+if bill>=3000:
+     tax=bill*10/100
+else:
+     tax=bill*18/100
+mainbill=bill-dis+tax
+print('total bill amount: ', mainbill)
+output:
+enter customer name:vanitha
+enter customer phone number:5789574
+enter no of conditioner bottles:3
+enter no of oil packets:5
+enter no of dal packets:7
+enter no of choclate packets:3
+enter no of pasta packets:5
+bill: 3800
+total bill amount:  3876.0
